@@ -1,3 +1,8 @@
+MyVideos/
+youtube_video/
+android_keystore.jks
+private_key.pepk
+
 #built application files
 *.apk
 *.ap_
