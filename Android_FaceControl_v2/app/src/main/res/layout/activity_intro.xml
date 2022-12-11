@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/indicator"
+        app:layout_constrainedHeight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/page_one"
+            layout="@layout/intro_1" />
+
+        <include
+            android:id="@+id/page_two"
+            layout="@layout/intro_2" />
+
+        <include
+            android:id="@+id/page_three"
+            layout="@layout/intro_3" />
+
+        <include
+            android:id="@+id/page_four"
+            layout="@layout/intro_4" />
+
+        <include
+            android:id="@+id/page_five"
+            layout="@layout/intro_5" />
+
+        <include
+            android:id="@+id/page_six"
+            layout="@layout/intro_6" />
+
+        <include
+            android:id="@+id/page_seven"
+            layout="@layout/intro_7" />
+
+        <include
+            android:id="@+id/page_eight"
+            layout="@layout/intro_8" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        app:ci_drawable="@drawable/black_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <Button
+        android:theme="@style/Theme.Design.Light"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:id="@+id/button_prev_skip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#x25C4;" />
+
+    <Button
+        android:theme="@style/Theme.Design.Light"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:id="@+id/button_next_exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#x25BA;" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

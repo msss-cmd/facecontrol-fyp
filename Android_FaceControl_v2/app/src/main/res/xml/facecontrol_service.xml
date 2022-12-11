@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true" />
+-->
+ <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:isAccessibilityTool="true"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagRequestFilterKeyEvents|flagRetrieveInteractiveWindows"
+    android:canPerformGestures="true"
+    android:accessibilityEventTypes="typeAllMask"
+    android:canRetrieveWindowContent="true"
+    android:canRequestFilterKeyEvents="true"
+    />

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ScanSettingsActivity">
+
+        <!-- SCAN BAND -->
+
+        <TextView
+            android:id="@+id/textview_scanbandspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan band speed (cm/s):"
+            android:textSize="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/edittext_scanbandspeed"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_scanbandspeed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edittext_scanbandspeed"
+            />
+
+        <EditText
+            android:id="@+id/edittext_scanbandspeed"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="3"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/textview_scanbandspeed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- SCAN LINE -->
+
+        <TextView
+            android:id="@+id/textview_scanlinespeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan line speed (cm/s):"
+            android:textSize="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/edittext_scanlinespeed"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_scanlinespeed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edittext_scanlinespeed"
+            />
+
+        <EditText
+            android:id="@+id/edittext_scanlinespeed"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="1"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/textview_scanlinespeed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_scanbandspeed" />
+
+        <!-- SCAN INITIAL PAUSE -->
+
+        <TextView
+            android:id="@+id/textview_scaninitialpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan initial pause (sec):"
+            android:textSize="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/edittext_scaninitialpause"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_scaninitialpause"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edittext_scaninitialpause"
+            />
+
+        <EditText
+            android:id="@+id/edittext_scaninitialpause"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="1"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/textview_scaninitialpause"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_scanlinespeed" />
+
+
+        <!-- SCAN BAND WIDTH -->
+
+        <TextView
+            android:id="@+id/textview_scanbandwidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan band width (cm):"
+            android:textSize="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/edittext_scanbandwidth"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_scanbandwidth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edittext_scanbandwidth"
+            />
+
+        <EditText
+            android:id="@+id/edittext_scanbandwidth"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="3"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/textview_scanbandwidth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_scaninitialpause" />
+
+        <!-- SCAN LOOP COUNT -->
+
+        <TextView
+            android:id="@+id/textview_scanloopcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan loop count:"
+            android:textSize="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/edittext_scanloopcount"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_scanloopcount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edittext_scanloopcount"
+            />
+
+        <EditText
+            android:id="@+id/edittext_scanloopcount"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="2"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/textview_scanloopcount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_scanbandwidth" />
+
+        <!-- AUTO-SELECT INITIAL PAUSE -->
+
+        <TextView
+            android:id="@+id/textview_autoselectpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto-select initial pause (sec):"
+            android:textSize="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/edittext_autoselectpause"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_autoselectpause"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edittext_autoselectpause"
+            />
+
+        <EditText
+            android:id="@+id/edittext_autoselectpause"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="1"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/textview_autoselectpause"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_scanloopcount" />
+
+        <!-- AUTO-SELECT PERIOD -->
+
+        <TextView
+            android:id="@+id/textview_autoselectperiod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto-select period (sec):"
+            android:textSize="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@id/edittext_autoselectperiod"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_autoselectperiod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edittext_autoselectperiod"
+            />
+
+        <EditText
+            android:id="@+id/edittext_autoselectperiod"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="1"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/textview_autoselectperiod"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_autoselectpause" />
+
+        <!-- Keyboard scan mode -->
+
+        <TextView
+            android:id="@+id/textview_keyboardscanmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keyboard scan mode:"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_autoselectperiod" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radiogroup_keyboardscanmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/textview_keyboardscanmode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" >
+
+            <RadioButton android:id="@+id/radio_keyboard_gridscan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grid scan"
+                android:onClick="myClickHandler"/>
+
+            <RadioButton android:id="@+id/radio_keyboard_pointscan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Point scan"
+                android:onClick="myClickHandler"/>
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

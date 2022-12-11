@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/button_startstop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_selector"
+        android:contentDescription="Start/Stop Button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_start"
+        android:text="Start"
+        app:layout_constraintBottom_toTopOf="@+id/button_intro"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/button_settings"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_selector"
+        android:contentDescription="Settings"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_settings"
+        android:text="Settings"
+        app:layout_constraintBottom_toTopOf="@+id/button_feedback"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/button_facegesturetest"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/button_startstop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_facegesturetest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_selector"
+        android:contentDescription="Calibration"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_calibration"
+        android:text="Face gesture test &amp; Calibration"
+        app:layout_constraintBottom_toTopOf="@+id/button_donate"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/button_settings"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_intro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_selector"
+        android:contentDescription="Introduction"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_introduction"
+        android:text="Introduction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/button_feedback"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_startstop" />
+
+    <ImageButton
+        android:id="@+id/button_feedback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_selector"
+        android:contentDescription="Feedback"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_feedback"
+        android:text="Feedback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/button_donate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/button_intro"
+        app:layout_constraintTop_toBottomOf="@+id/button_settings" />
+
+    <ImageButton
+        android:id="@+id/button_donate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_selector"
+        android:contentDescription="Donate"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_donate"
+        android:text="Donate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/button_feedback"
+        app:layout_constraintTop_toBottomOf="@+id/button_facegesturetest" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

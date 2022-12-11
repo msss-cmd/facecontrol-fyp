@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FaceControl</string>
+
+    <string name="intro_1">
+Welcome to FaceControl!\n\n
+	This is an accessibility application designed to help users who have difficulty using tablet/smartphone (for example due to cerebral palsy or quadriplegia).\n
+FaceControl works by enabling users to control their device using \'switches\'.\n\n
+	Primary feature of FaceControl is that it uses camera switches, which means you can fully control
+your Android device using facial gestures: with a smile, eyebrow raise, eye movement, eye wink, and mouth open.\n
+		(for example you smile briefly, and then stop smiling)\n\n
+		<a href="http://www.obstino.org/facecontrol/privacy.html">Privacy policy</a>\n\n
+		<a href="http://www.obstino.org/facecontrol/eula.html">EULA</a>
+    </string>
+
+	<string name="intro_2">
+	With FaceControl, you can also use physical switches that connect to the Android device using either Bluetooth or USB (such as from AbleNet, Enabling Devices, RJ Cooper, and Tecla).\n
+An external keyboard or buttons on your Android device may also act as a switch.\n
+In order to control your device using switches, you assign switch to a certain switch action.\n\n
+	Two primary switch actions in FaceControl are: \n
+1) "Select item/Scan" switch action \n
+2) "Next item/Menu" action \n\n
+You use these two switch actions to select a point on which to tap/drag, and to navigate through menu items.\n\n
+	</string>
+
+	<string name="intro_3">
+	FaceControl also has a \"Sensitivity &amp; test\" menu where you can see yourself in the camera.\n
+This is where you can test if the app detects your facial gestures (smile, eyebrow raise, eye look left/right, eye wink, and mouth open)\n
+For example when you smile, a smiley face icon will appear, giving you direct feedback that a smile was recognized.\n\n
+Additionally, you can also set sensitivity for all facial gestures, to optimize your experience.\n\n
+		Before attempting to use the application, we strongly suggest you use this menu to get familiar with how
+FaceControl recognizes facial gestures.
+	</string>
+
+
+</resources>
