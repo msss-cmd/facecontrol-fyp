@@ -7,7 +7,7 @@ Face Control enables **smart (camera) switch access for disabled users**, who ar
 *Click to watch* the app in action:  
 [![Watch app in action](https://img.youtube.com/vi/Rjlfqskfp_0/sddefault.jpg)](https://www.youtube.com/watch?v=Rjlfqskfp_0)
 
-Primarily, Face Control uses front camera to detect *face gestures*: **smile, eyebrow raise, eye movement, eye wink, and mouth open**.
+Primarily, Face Control uses front camera to detect *face gestures*: **smile, eyebrow raise, eye movement, eye wink, and mouth open**.  
 Face gestures act as a "camera switch", which means a disabled user can fully control their Android device only using their face (for example by smiling and raising the eyebrow).  
 For example, Face Control uses the detected smile to select a point on which to tap on screen, or use combination of eyebrow raise and smile to select Face Control menu actions such as scrolling inside web browser.  
   
