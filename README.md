@@ -4,8 +4,7 @@
 Face Control enables **smart (camera) switch access for disabled users**, who are unable to use their Android device using touchscreen.  
 (Get the app on *Google Play*: https://play.google.com/store/apps/details?id=com.obstino.facecontrol)
 
-*Click to watch* the app in action:  
-[![Watch app in action](https://img.youtube.com/vi/Rjlfqskfp_0/sddefault.jpg)](https://www.youtube.com/watch?v=Rjlfqskfp_0)
+
 
 Primarily, Face Control uses front camera to detect *face gestures*: **smile, eyebrow raise, eye movement, eye wink, and mouth open**.  
 With Face Control, **you can also use *physical switches*** that connect to the Android device using either Bluetooth or USB (such as from AbleNet, Enabling Devices, RJ Cooper, and Tecla).  
