@@ -2,7 +2,7 @@
 ### Face Control uses front camera to control your device using your face
 
 Face Control enables **smart (camera) switch access for disabled users**, who are unable to use their Android device using touchscreen.  
-(Get the app on *Google Play*: https://play.google.com/store/apps/details?id=com.obstino.facecontrol)
+
 
 
 
